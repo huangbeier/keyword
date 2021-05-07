@@ -1,0 +1,12 @@
+2021-05-07 18:09:17.714 | ERROR    | utils.logg:error:39 - 第2行用例错误
+Traceback (most recent call last):
+  File "C:\huang111\keyword_1\action\eleAction.py", line 63, in assert_title
+    assert values in driver.title
+AssertionError
+
+2021-05-07 18:09:32.030 | ERROR    | utils.logg:error:39 - 第3行用例错误
+Traceback (most recent call last):
+  File "C:\huang111\keyword_1\action\eleAction.py", line 63, in assert_title
+    assert values in driver.title
+AssertionError
+
