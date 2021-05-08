@@ -2,14 +2,11 @@
 # @Time ：2021/5/7__11:21
 # #coding:utf-8
 import traceback
-
 from utils.exceltools import Excel_tools
 from selenium import webdriver
-
 from config.config import Chromepath, excelpath
 from utils.logg import Loggings
 import time
-
 from utils.find_element import find_element, find_elements
 
 log=Loggings()
@@ -64,7 +61,7 @@ def assert_title(row,values,*args):
         ex.write_specific_data(row, 6, 'pass')
     except Exception as e:
         ex.write_specific_data(row, 6, 'fail')
-        log.error(f'第{str(row)}行用例错误\r\n'+traceback.format_exc())
+        log.error(f'第{str(row)}行用例断言错误\r\n'+traceback.format_exc())
         print(e)
 
 def input_subject(ele_type,ele_vaule,values,*args):
@@ -89,7 +86,7 @@ def assert_pagesource(row,values,*args):
         ex.write_specific_data(row, 6, 'pass')
     except Exception as e:
         ex.write_specific_data(row, 6, 'fail')
-        log.error(f'第{str(row)}行用例错误\r\n'+traceback.format_exc())
+        log.error(f'第{str(row)}行用例断言错误\r\n'+traceback.format_exc())
 
         print(e)
 
